@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>Log-in</title>
+<script src="{{ static_url('login.js') }}"></script>
+<link href="{{ static_url('login.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="content">
+		<div id="logo">
+			<p>
+				<img src="{{ static_url('pics/logo.png') }}" width="208" height="100"></img>
+			</p>
+		</div>
+		<form id="login" method="POST" action="/label" onsubmit="return validateForm()">
+			<p>请输入您的账号及密码</p>
+			<div>
+				账号：<input type="text" size=20 value="" placeholder="请输入您的邮箱"
+					name="account" id="account" onchange="validate()" autofocus /><span
+					class="warnning" id="warn0"></span><br />
+				<!--size-->
+				密码：<input type="password" size=20 value="" placeholder="请输入密码"
+					name="password" id="password" onchange="validate()" /><span class="warnning"
+					id="warn1"></span><br />
+				<!--password cannot be shown-->
+				<div id="btn">
+					<input id="btn1" type="submit" value="登入" /> 
+					<a href="/registerpage"><input id="btn2" type="button" value="注册" /></a>
+				</div>
+			</div>
+		</form>
+	</div>
+	<footer>
+		<p>Copyright &copy; 2017 Yang Chen MSN Group, All Rights Reserved</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+* {
+
+	padding: 0;
+	margin: 5px;
+	font-family: /*arial, 'Hiragino Sans GB', 'Microsoft Yahei',*/ '΢���ź�', '����', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+}
+
+body{
+	background-image:url("pics/bg_login.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+footer{
+	clear:both;
+	position:relative;
+	color: rgb(169,209,142);
+	margin-top:80px;
+	margin-bottom:35px;
+	text-align:center;
+	inline-height:1;
+}
+
+#wrapper{
+	width:992px;
+	margin:auto;
+}
+
+#criteria {
+	text-align:left;
+	background:rgba(255,255,255,0.8);
+	border:1px gray solid;
+	padding:15px;
+	/*width:730px;*/
+	/*margin-left:230px;*/
+	position:relative;
+	/*right:0;*/
+	/*top:0;*/
+}
+
+.highlight {
+	font-weight: bold;
+}
+
+.redundant {
+	text-decoration:underline;
+}

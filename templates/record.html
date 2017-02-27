@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>record</title>
+    <link href="{{ static_url('label.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="hello">Hello, {{name}}</div>
+        <table>
+            <tr>
+                <th>Label</th>
+                <th>Scholar name</th>
+                <th>href</th>
+                <th>Modify</th>
+            </tr>
+            {% for record in records %}
+                <tr>
+                    <td>{{record['label']}}</td>
+                    <td>{{record['scholarname']}}</td>
+                    <td><a href="https://scholar.google.co.jp/citations?user={{record['filename'].replace('.parse','')}}&hl=zh-CN&oi=ao" target="_blank">google scholar page</a></td>
+                    <td><a href="/label?account={{account}}&filename={{record['filename']}}">modify</a></td>
+                </tr>
+            {% end %}
+        </table>
+    </div>
+    <footer>
+		<p>Copyright &copy; 2017 Yang Chen MSN Group, All Rights Reserved</p>
+	</footer>
+</body>
+</html>

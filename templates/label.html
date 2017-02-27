@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Labeling</title>
+    <script src="{{ static_url('label.js') }}"></script>
+    <link href="{{ static_url('label.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="hello">Hello, {{name}}</div>
+        <div id="gs_page">
+            <a href="https://scholar.google.co.jp/citations?user={{scholarID}}&hl=zh-CN&oi=ao" target="_blank">Google Scholar Cite</a>
+            <a href="/static/gs_data/{{scholarID}}.parse" target="_blank">Profile</a>
+        </div>
+        <form id="kernel" method="post" action="/store" onsubmit="return validateForm()">
+            <input type="radio" name="label" value="reliable" />reliable
+            <input type="radio" name="label" value="sybil" />unreliable
+            <input type="radio" name="label" value="ambiguous" />ambiguous
+            <input type="radio" name="label" value="invalid" />invalid
+            <input type="hidden" name="filename" value="{{scholarID}}.parse" />
+            <input type="hidden" name="account" value="{{email}}" />
+            <input type="submit" value="submit" id="submit_btn" />
+        </form>
+        <div id="record">
+            The number of labeled data so far (ambiguous not counted): {{number}}
+            <a href="/record?account={{email}}"><input type="button" id="show_record" value="show data"></a>
+        </div>
+        <div id="criteria">
+            <p>判断原则:</p>
+            <p>1.查看Google Scholar Cite中显示的学者资料是否同Profile下载文件差不多，由于Profile中学者资料为2015年版，若学者2015年及之前文章列表没有改动，且邮箱不变者为有效数据，否则直接标记为invalid</p>
+            <p>2.通过以下标准判断学者是否有引入他人论文，只要存在一篇即为unreliable，如果存在一些文章有较大疑点标记为ambiguous，将疑点截图记录下来询问我，最终ambiguous也必须判断为reliable/unreliable，ambiguous不计分</p>
+            <p class="highlight">*长时间登录该标记系统却没有任何操作可能会出BUG，尝试重新登录即可，如果还有BUG麻烦把网页上的BUG追踪第一时间发给我谢谢_(:зゝ∠)_</p>
+            <p class="highlight">不推荐使用IE浏览器，最好是Chrome</p>
+            <br>
+            <p>判断方法:</p>
+            <p>1.看一下每篇文章列表里有没有这个作者，一般这个列表只有名字缩写，最好能全部点击进入文章详细页面确认是否作者本人，因为可能是名字缩写一样的其他人；但是文章多的话太费劲，可以抽样，或者通过其他方法快速判断（练多了就知道套路了嗯）</p>
+            <p>2.查看文章的标题，是否符合学者标注的研究领域（若有），或者是否和其他文章同属一个领域</p>
+            <p>3.查看文章合作作者是否相似</p>
+            <p>Tips：</p>
+            <p>1.一般没有通过邮件验证的学者下面的文章可疑性比较高，需要多抽样几篇；同理，没有照片、没有标明自己研究领域的学者也比较可疑（比较少打理Google Scholar的个人主页，可能存在根据Google系统推荐引入相似名字的其他学者论文）；相反，提供了个人主页的相对可信度较高</p>
+            <p>2.有的文章点击进入文章页面也没有作者的全名，需要点击查看论文原稿，如果还是没有，且无法通过其他信息判断的话，标记为ambiguous之后再修改</p>
+            <p>3.遇到期刊杂志这种不是学者的页面，不用看了直接标unreliable</p>
+            <p>4.有的学者名字改过，比如女性嫁人后随夫姓，需要仔细核对一下</p>
+            <p>5.有的学者父母也是学者，其实要格外小心有没有互相引入对方的论文，因为西方人习惯把父母的名字作为中间名，因此名字简写可能十分相近（因为姓氏必然相同）</p>
+            <p>6.有的教授不在文章列表里，但是这些文章其实是他/她学生发表的，不算是unreliable，这种可以通过作者所属学校判断</p>
+            <p class="redundant">*复杂度极高，因此标错也可以接受</p>
+        </div>
+    </div>
+    <footer>
+		<p>Copyright &copy; 2017 Yang Chen MSN Group, All Rights Reserved</p>
+	</footer>
+</body>
+</html>

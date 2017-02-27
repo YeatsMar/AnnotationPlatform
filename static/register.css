@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+* {	
+	padding: 0;
+	margin: 5px;
+	font-family: /*arial, 'Hiragino Sans GB', 'Microsoft Yahei',*/ 'Î¢ÈíÑÅºÚ', 'ËÎÌå', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+}
+
+body {
+	background-image:url("pics/bg_login.jpg"); 
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+#content {
+	width: 402px;
+	height: 470px;
+	margin: 0 auto 0 auto;
+	/*text-align:center;*/
+}
+
+#logo {
+	margin:15px;
+	margin-left:-20px;
+	text-align:left;
+}
+
+#register {	
+	background:rgba(255,255,255,0.8);
+	border:1px gray solid;
+	border-radius:4px;
+	/*height:300px;
+	width:402px;*/
+	margin:auto;
+}
+
+
+#register p {
+	padding:10px;
+	padding-left:4px;
+	text-align:left;
+}
+
+form {
+	padding:10px;
+}
+
+#btn1:hover{color:red;}
+#btn1:active{color:orange;}
+#btn2:hover{color:red;}
+#btn2:active{color:orange;}
+#btn{
+	float:right;
+	position:relative;
+	padding-top:20px;
+}
+
+
+footer{
+	clear:both;/*not to cover*/
+	position:relative;
+	float:bottom;
+	color: rgb(169,209,142);
+	margin-top:180px;/*to drop it*/
+	margin-bottom:35px;
+	text-align:center;
+	inline-height:1;
+}
+
+.warnning {
+	font-size:12px;
+	color: red;
+}
+
+#more {
+	font-size:12px;
+	color: rgb(109,154,90);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
