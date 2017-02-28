@@ -192,15 +192,15 @@ class DB:
     def modify_labeled(self, account, filename, label):
         self.sql_commit("UPDATE labeled SET label = %s WHERE filename = %s AND labeler = %s", (label, filename, account))
 
-    def modify_label_list(self, filename, original_label, label, accout):
+    def modify_label_list(self, filename, original_label, label, account):
         entry = self.query("SELECT * FROM label_list WHERE filename = %s", filename)
         # delete original
         moveforward = False
         i = 1
         while i < 4:
             labelstr = original_label + str(i)
-            if entry[labelstr] == accout or moveforward:
-                if entry[labelstr] == accout:
+            if entry[labelstr] == account or moveforward:
+                if entry[labelstr] == account:
                     moveforward = True
                 if i != 3 and entry[label+str(i+1)] is not None:
                     # move forward and cover
@@ -240,19 +240,18 @@ class DB:
 
     def store_label(self, account, filename, label):
         # store
-        if label == 'invalid':
+        if label == 'invalid' or label == 'ambiguous':
             self.sql_commit("UPDATE label_list SET label='invalid' WHERE filename=%s", filename)
-        else:
             result = self.query("SELECT scholarname FROM scholar_list WHERE filename =%s", filename)
             if result is None:
                 raise Exception('Cannot find this scholar! in db.py store_label()')
             scholarname = result['scholarname']
             self.sql_commit("INSERT INTO labeled (labeler, filename, label, scholarname) VALUES (%s, %s, %s, %s)", (account, filename, label, scholarname))
-            if label == 'ambiguous':
-                return
+        else:
             entry = self.query("SELECT * from label_list WHERE filename = %s", filename)
             if entry is None:
-                raise Exception("File cannot find!")
+                exc_message = "File cannot be found in label_list!\nfilename=%s" % filename
+                raise Exception(exc_message)
             else:
                 for i in range(1, 4):
                     labelstr = label + str(i)
@@ -263,6 +262,7 @@ class DB:
                         sql = "UPDATE label_list SET %s = '%s' WHERE filename='%s'" % (labelstr, account, filename)
                         self.sql_commit(sql, None)
                         break
+        # no matter what label, move forward the cursor
         self.update_my_cursor(account)
 
     def update_my_cursor(self, account, mycursor=None):
