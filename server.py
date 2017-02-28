@@ -60,7 +60,6 @@ class ModifyHandler(tornado.web.RequestHandler):
         account = self.get_argument('account')
         original_label = self.get_argument('original')
         mydb.modify_labeled(account, filename, label)
-
         # the same as /store
         name = mydb.get_name(account)
         filename = mydb.next_file(account)
@@ -73,13 +72,17 @@ class DatabaseHandler(tornado.web.RequestHandler):
         label = self.get_argument('label')
         account = self.get_argument('account')
         # mydb.update_labeled(filename, label, account)
-        mydb.store_label(account, filename, label)
-        # render label again
-        name = mydb.get_name(account)
-        filename = mydb.next_file(account)
-        # mydb.update_labeled(filename, 'labeling', account)
-        number = mydb.number_labeled(account)
-        self.render('label.html', number=number,email=account, name=name, scholarID=filename.replace('.parse', ''))
+        try:
+            mydb.store_label(account, filename, label)
+        except Exception as e:
+            print e.message
+        finally:
+            # render label again
+            name = mydb.get_name(account)
+            filename = mydb.next_file(account)
+            # mydb.update_labeled(filename, 'labeling', account)
+            number = mydb.number_labeled(account)
+            self.render('label.html', number=number, email=account, name=name, scholarID=filename.replace('.parse', ''))
 
 class RecordHandler(tornado.web.RequestHandler):
     def get(self):

@@ -25,7 +25,7 @@ class DB:
 
     def number_labeled(self, account):
         result = self.query(
-            "SELECT count(*) as number FROM labeled where labeler = %s",
+            "SELECT count(*) as number FROM labeled where labeler = %s AND label != 'ambiguous'",
             account)
         if result is None:
             print ("Error in count labeled#!")
@@ -72,6 +72,7 @@ class DB:
                 return self.query(sql, parameter)
             else:
                 print ('sql=%s\nexception is %s\n\n' % (sql, e))
+                raise # todo: delete
 
     def query_many(self, sql, parameter):
         try:
@@ -86,6 +87,7 @@ class DB:
                 return self.query_many(sql, parameter)
             else:
                 print ('sql=%s\nexception is %s\n\n' % (sql, e))
+                raise # todo: delete
 
     def sql_commit(self, sql, parameter):
         try:
@@ -101,6 +103,7 @@ class DB:
                 self.sql_commit(sql, parameter)
             else:
                 print ('sql=%s\nexception is %s\n\n' % (sql, e))
+                raise # todo: delete
 
 
     def get_labeling(self, account):
@@ -141,37 +144,47 @@ class DB:
             else:
                 mycursor = mycursor['mycursor']
         entry = self.query("SELECT * from label_list WHERE `index` >= %s ORDER BY `index` LIMIT 1", int(mycursor))
-        print entry['filename']
+        filename =  entry['filename']
+        record = self.query("SELECT * FROM labeled WHERE filename=%s AND labeler=%s", (filename, account))
+        if record is not None:
+            return self.next_file(account, mycursor + 1)
         if entry['reliable1'] is None and entry['sybil1'] is None:
+            self.update_my_cursor(account, mycursor)
             return entry['filename']
         elif entry['reliable1'] is not None and entry['sybil1'] is None:
             if entry['reliable2'] is not None:
                 # skip this entry
                 return self.next_file(account, mycursor + 1)
             else:
+                self.update_my_cursor(account, mycursor)
                 return entry['filename']
         elif entry['reliable1'] is None and entry['sybil1'] is not None:
             if entry['sybil2'] is not None:
                 # skip this entry
                 return self.next_file(account, mycursor + 1)
             else:
+                self.update_my_cursor(account, mycursor)
                 return entry['filename']
         else:
             if entry['reliable2'] is None and entry['sybil2'] is None:
+                self.update_my_cursor(account, mycursor)
                 return entry['filename']
             elif entry['reliable2'] is not None and entry['sybil2'] is None:
                 if entry['reliable3'] is not None:
                     # skip this entry
                     return self.next_file(account, mycursor + 1)
                 else:
+                    self.update_my_cursor(account, mycursor)
                     return entry['filename']
             elif entry['reliable2'] is None and entry['sybil2'] is not None:
                 if entry['sybil3'] is not None:
                     # skip this entry
                     return self.next_file(account, mycursor + 1)
                 else:
+                    self.update_my_cursor(account, mycursor)
                     return entry['filename']
             elif entry['reliable3'] is None and entry['sybil3'] is None:
+                self.update_my_cursor(account, mycursor)
                 return entry['filename']
             elif entry['reliable3'] is not None and entry['sybil3'] is not None:
                 # skip this entry
@@ -246,14 +259,23 @@ class DB:
             else:
                 for i in range(1, 4):
                     labelstr = label + str(i)
+                    if entry[labelstr] == account:
+                        self.update_my_cursor(account)
+                        raise Exception('Already insert into a slot in label_list! in db.py store_label()')
                     if entry[labelstr] is None:
                         sql = "UPDATE label_list SET %s = '%s' WHERE filename='%s'" % (labelstr, account, filename)
                         self.sql_commit(sql, None)
                         break
-        # update cursor
-        mycursor = self.query("SELECT `mycursor` FROM user_list WHERE email = %s", account)
-        if mycursor is None:
-            raise Exception('Get None MyCursor!')
+        self.update_my_cursor(account)
+
+    def update_my_cursor(self, account, mycursor=None):
+        if mycursor is not None:
+            self.sql_commit("UPDATE user_list SET mycursor = %s WHERE email = %s", (mycursor, account))
         else:
-            mycursor = mycursor['mycursor']
-        self.sql_commit("UPDATE user_list SET mycursor = %s WHERE email = %s", (mycursor + 1, account))
+            # update cursor
+            mycursor = self.query("SELECT `mycursor` FROM user_list WHERE email = %s", account)
+            if mycursor is None:
+                raise Exception('Get None MyCursor!')
+            else:
+                mycursor = mycursor['mycursor']
+            self.sql_commit("UPDATE user_list SET mycursor = %s WHERE email = %s", (mycursor + 1, account))
