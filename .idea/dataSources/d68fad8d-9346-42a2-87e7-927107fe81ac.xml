@@ -9,176 +9,294 @@
     <schema id="3" parent="1" name="blog"/>
     <schema id="4" parent="1" name="information_schema"/>
     <schema id="5" parent="1" name="lab8"/>
-    <schema id="6" parent="1" name="label_system"/>
-    <schema id="7" parent="1" name="mysql"/>
-    <schema id="8" parent="1" name="performance_schema"/>
-    <table id="9" parent="2" name="abbrev_name"/>
-    <table id="10" parent="2" name="field_major"/>
-    <table id="11" parent="2" name="journal"/>
-    <table id="12" parent="2" name="longname"/>
-    <table id="13" parent="2" name="publications"/>
-    <table id="14" parent="2" name="repetitiveNameAbbr"/>
-    <table id="15" parent="2" name="repetitiveSurname"/>
-    <table id="16" parent="2" name="scholar_list"/>
-    <column id="17" parent="9" name="filename">
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <table id="8" parent="2" name="abbrev_name"/>
+    <table id="9" parent="2" name="field_major"/>
+    <table id="10" parent="2" name="journal"/>
+    <table id="11" parent="2" name="label_list"/>
+    <table id="12" parent="2" name="labeled"/>
+    <table id="13" parent="2" name="longname"/>
+    <table id="14" parent="2" name="publications"/>
+    <table id="15" parent="2" name="repetitiveNameAbbr"/>
+    <table id="16" parent="2" name="repetitiveSurname"/>
+    <table id="17" parent="2" name="scholar_list"/>
+    <table id="18" parent="2" name="user_list"/>
+    <column id="19" parent="8" name="filename">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="18" parent="9" name="name">
+    <column id="20" parent="8" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="19" parent="9" name="surname">
+    <column id="21" parent="8" name="surname">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="20" parent="9" name="name_abbr">
+    <column id="22" parent="8" name="name_abbr">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="21" parent="9" name="firstname">
+    <column id="23" parent="8" name="firstname">
       <Position>5</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="9" name="id">
+    <column id="24" parent="8" name="id">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="23" parent="9" name="former#">
+    <column id="25" parent="8" name="former#">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="24" parent="9" name="PRIMARY">
+    <key id="26" parent="8" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="25" parent="10" name="field">
+    <column id="27" parent="9" name="field">
       <Position>1</Position>
       <DataType>varchar(60)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="26" parent="10" name="major">
+    <column id="28" parent="9" name="major">
       <Position>2</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="27" parent="10" name="PRIMARY">
+    <key id="29" parent="9" name="PRIMARY">
       <ColNames>field</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="28" parent="11" name="filename">
+    <column id="30" parent="10" name="filename">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="11" name="journalname">
+    <column id="31" parent="10" name="journalname">
       <Position>2</Position>
       <DataType>longtext|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="30" parent="11" name="PRIMARY">
+    <key id="32" parent="10" name="PRIMARY">
       <ColNames>filename</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="31" parent="12" name="filename">
+    <column id="33" parent="11" name="filename">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="32" parent="12" name="longname">
+    <column id="34" parent="11" name="reliable1">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="35" parent="11" name="reliable2">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="36" parent="11" name="reliable3">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="37" parent="11" name="sybil1">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="38" parent="11" name="sybil2">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="39" parent="11" name="sybil3">
+      <Position>7</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="40" parent="11" name="index">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="11" name="label">
+      <Position>9</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="42" parent="11" name="index_UNIQUE">
+      <ColNames>index</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="11" name="PRIMARY">
+      <ColNames>filename</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="44" parent="11" name="index_UNIQUE">
+      <ColNames>index</ColNames>
+      <UnderlyingIndexName>index_UNIQUE</UnderlyingIndexName>
+    </key>
+    <column id="45" parent="12" name="labeler">
+      <Position>1</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="12" name="filename">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="12" name="label">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="48" parent="12" name="scholarname">
+      <Position>4</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <key id="49" parent="12" name="PRIMARY">
+      <ColNames>labeler
+filename</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="13" name="filename">
+      <Position>1</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="13" name="longname">
       <Position>2</Position>
       <DataType>longtext|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="33" parent="12" name="length">
+    <column id="52" parent="13" name="length">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="34" parent="12" name="PRIMARY">
+    <column id="53" parent="13" name="initial">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="54" parent="13" name="suffix">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="55" parent="13" name="PRIMARY">
       <ColNames>filename</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="35" parent="13" name="publicationName">
+    <column id="56" parent="14" name="publicationName">
       <Position>1</Position>
       <DataType>longtext|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="36" parent="13" name="field">
+    <column id="57" parent="14" name="field">
       <Position>2</Position>
       <DataType>varchar(60)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="37" parent="13" name="major">
+    <column id="58" parent="14" name="major">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="38" parent="13" name="id">
+    <column id="59" parent="14" name="id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <key id="39" parent="13" name="PRIMARY">
+    <key id="60" parent="14" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="40" parent="14" name="name_abbr">
+    <column id="61" parent="15" name="name_abbr">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="14" name="nb">
+    <column id="62" parent="15" name="nb">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="42" parent="14" name="PRIMARY">
+    <key id="63" parent="15" name="PRIMARY">
       <ColNames>name_abbr</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="43" parent="15" name="surname">
+    <column id="64" parent="16" name="surname">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="44" parent="15" name="nb">
+    <column id="65" parent="16" name="nb">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="45" parent="15" name="PRIMARY">
+    <key id="66" parent="16" name="PRIMARY">
       <ColNames>surname</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="46" parent="16" name="filename">
+    <column id="67" parent="17" name="filename">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="16" name="scholarname">
+    <column id="68" parent="17" name="scholarname">
       <Position>2</Position>
       <DataType>longtext|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="48" parent="16" name="label">
+    <column id="69" parent="17" name="label">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;unlabeled&apos;</DefaultExpression>
     </column>
-    <key id="49" parent="16" name="PRIMARY">
+    <column id="70" parent="17" name="labeler">
+      <Position>4</Position>
+      <Comment>email</Comment>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="71" parent="17" name="category">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="72" parent="17" name="PRIMARY">
       <ColNames>filename</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="73" parent="18" name="email">
+      <Position>1</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="18" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="75" parent="18" name="password">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="18" name="mycursor">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="77" parent="18" name="PRIMARY">
+      <ColNames>email</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

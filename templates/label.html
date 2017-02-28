@@ -11,8 +11,10 @@
         <div id="hello">Hello, {{name}}</div>
         <div id="gs_page">
             <a href="https://scholar.google.co.jp/citations?user={{scholarID}}&hl=zh-CN&oi=ao" target="_blank">Google Scholar Cite</a>
-            <a href="/static/gs_data/{{scholarID}}.parse" target="_blank">Profile</a>
+            <a href="/file?scholarID={{scholarID}}" target="_blank">Profile</a>
+            <!--/static/gs_data/{{scholarID}}.parse-->
         </div>
+        {% block form %}
         <form id="kernel" method="post" action="/store" onsubmit="return validateForm()">
             <input type="radio" name="label" value="reliable" />reliable
             <input type="radio" name="label" value="sybil" />unreliable
@@ -22,6 +24,7 @@
             <input type="hidden" name="account" value="{{email}}" />
             <input type="submit" value="submit" id="submit_btn" />
         </form>
+        {% end %}
         <div id="record">
             The number of labeled data so far (ambiguous not counted): {{number}}
             <a href="/record?account={{email}}"><input type="button" id="show_record" value="show data"></a>

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07ca49f0-1c41-47ca-97f6-c06b26c358e4" name="Default" comment="" />
+    <list default="true" id="07ca49f0-1c41-47ca-97f6-c06b26c358e4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/modify_label.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d68fad8d-9346-42a2-87e7-927107fe81ac.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d68fad8d-9346-42a2-87e7-927107fe81ac.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.py" afterPath="$PROJECT_DIR$/db.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/help.py" afterPath="$PROJECT_DIR$/help.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/label.html" afterPath="$PROJECT_DIR$/templates/label.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/record.html" afterPath="$PROJECT_DIR$/templates/record.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,74 +42,124 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <element signature="e#2872#3039#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="label.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/label.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="167" column="7" lean-forward="true" selection-start-line="167" selection-start-column="7" selection-end-line="167" selection-end-column="7" />
+            <state relative-caret-position="109">
+              <caret line="165" column="7" lean-forward="false" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
               <folding>
-                <element signature="e#3939#4237#0" expanded="false" />
-                <element signature="e#4296#7187#0" expanded="false" />
-                <marker date="1488173442000" expanded="true" signature="551:670" ph="SELECT count... scholar_list" />
-                <marker date="1488173442000" expanded="true" signature="898:985" ph="INSERT INTO `label_system`.`userlist`... " />
-                <marker date="1488173442000" expanded="true" signature="1078:1133" ph="SELECT name userlist" />
-                <marker date="1488173442000" expanded="true" signature="1308:1360" ph="SELECT * FRO... userlist" />
-                <marker date="1488173442000" expanded="true" signature="1593:1652" ph="SELECT passw... userlist" />
-                <marker date="1488173442000" expanded="true" signature="3240:3326" ph="SELECT filen... scholar_list" />
-                <marker date="1488173442000" expanded="true" signature="3546:3637" ph="UPDATE `labe... " />
-                <marker date="1488173442000" expanded="true" signature="3759:3842" ph="SELECT filen... scholar_list" />
-                <marker date="1488173442000" expanded="true" signature="3973:4079" ph="SELECT filen... scholar_list" />
-                <marker date="1488173442000" expanded="true" signature="4352:4400" ph="SELECT `mycu... userlist" />
-                <marker date="1488173442000" expanded="true" signature="4593:4661" ph="SELECT * fro... label_list" />
-                <marker date="1488173442000" expanded="true" signature="4775:4825" ph="UPDATE userl... " />
-                <marker date="1488173442000" expanded="true" signature="5156:5206" ph="UPDATE userl... " />
-                <marker date="1488173442000" expanded="true" signature="5538:5588" ph="UPDATE userl... " />
-                <marker date="1488173442000" expanded="true" signature="5775:5825" ph="UPDATE userl... " />
-                <marker date="1488173442000" expanded="true" signature="6184:6234" ph="UPDATE userl... " />
-                <marker date="1488173442000" expanded="true" signature="6594:6644" ph="UPDATE userl... " />
-                <marker date="1488173442000" expanded="true" signature="6823:6873" ph="UPDATE userl... " />
+                <element signature="e#7694#9911#0" expanded="false" />
+                <element signature="e#9974#11479#0" expanded="false" />
+                <marker date="1488201802000" expanded="true" signature="557:676" ph="SELECT count... scholar_list" />
+                <marker date="1488201802000" expanded="true" signature="916:973" ph="SELECT count... labeled" />
+                <marker date="1488201802000" expanded="true" signature="1201:1233" ph="INSERT INTO `label_system`.`userlist`... " />
+                <marker date="1488201802000" expanded="true" signature="1201:1289" ph="INSERT INTO `label_system`.`user_list`... " />
+                <marker date="1488201802000" expanded="true" signature="1382:1438" ph="SELECT name user_list" />
+                <marker date="1488201802000" expanded="true" signature="1613:1666" ph="SELECT * FRO... user_list" />
+                <marker date="1488201802000" expanded="true" signature="1899:1959" ph="SELECT passw... user_list" />
+                <marker date="1488201802000" expanded="true" signature="4027:4113" ph="SELECT filen... scholar_list" />
+                <marker date="1488201802000" expanded="true" signature="4333:4424" ph="UPDATE `labe... " />
+                <marker date="1488201802000" expanded="true" signature="4770:4835" ph="SELECT filen... labeled" />
+                <marker date="1488201802000" expanded="true" signature="5343:5392" ph="SELECT `mycu... user_list" />
+                <marker date="1488201802000" expanded="true" signature="5585:5654" ph="SELECT * fro... label_list" />
+                <marker date="1488201802000" expanded="true" signature="7514:7580" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="7714:7758" ph="SELECT * FRO... label_list" />
+                <marker date="1488201802000" expanded="true" signature="8186:8237" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="8409:8460" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="8831:8886" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="8946:9001" ph="SELECT schol... scholar_list" />
+                <marker date="1488201802000" expanded="true" signature="9206:9289" ph="INSERT INTO labeled... " />
+                <marker date="1488201802000" expanded="true" signature="9425:9469" ph="SELECT * fro... label_list" />
+                <marker date="1488201802000" expanded="true" signature="9746:9797" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="10042:10097" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="10157:10212" ph="SELECT schol... scholar_list" />
+                <marker date="1488201802000" expanded="true" signature="10417:10500" ph="INSERT INTO labeled... " />
+                <marker date="1488201802000" expanded="true" signature="10636:10680" ph="SELECT * fro... label_list" />
+                <marker date="1488201802000" expanded="true" signature="10957:11004" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="10957:11005" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="10957:11007" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="10957:11008" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="10957:11041" ph="UPDATE label... " />
+                <marker date="1488201802000" expanded="true" signature="11178:11227" ph="SELECT `mycu... user_list" />
+                <marker date="1488201802000" expanded="true" signature="11401:11452" ph="UPDATE user_... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="help.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/help.py">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d68fad8d-9346-42a2-87e7-927107fe81ac/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1488162366000" expanded="true" signature="99:137" ph="SELECT filen... scholar_list" />
-                <marker date="1488162366000" expanded="true" signature="99:191" ph="SELECT filen... scholar_list" />
-                <marker date="1488162366000" expanded="true" signature="302:377" ph="INSERT INTO `label_system`.label_list... " />
-                <marker date="1488162366000" expanded="true" signature="492:564" ph="INSERT INTO `label_system`.label_list... " />
-                <marker date="1488162366000" expanded="true" signature="639:762" ph="SELECT filen... scholar_list" />
-                <marker date="1488162366000" expanded="true" signature="873:948" ph="INSERT INTO `label_system`.label_list... " />
-                <marker date="1488162366000" expanded="true" signature="1066:1138" ph="INSERT INTO `label_system`.label_list... " />
-                <marker date="1488162366000" expanded="true" signature="1091:1138" ph="INSERT INTO `gs`.label_list... " />
-                <marker date="1488162366000" expanded="true" signature="1223:1245" ph="SELECT filen... scholar_list" />
-                <marker date="1488162366000" expanded="true" signature="1223:1367" ph="SELECT filen... scholar_list" />
-                <marker date="1488162366000" expanded="true" signature="1435:1495" ph="INSERT INTO `label_system`.label_list... " />
-                <marker date="1488162366000" expanded="true" signature="1460:1495" ph="INSERT INTO `gs`.label_list... " />
-                <marker date="1488162366000" expanded="true" signature="1571:1586" ph="SELECT * fro... label_list" />
-                <marker date="1488162366000" expanded="true" signature="1571:1610" ph="SELECT * fro... label_list" />
-                <marker date="1488162366000" expanded="true" signature="1702:1775" ph="UPDATE `labe... " />
-                <marker date="1488162366000" expanded="true" signature="1722:1775" ph="UPDATE `gs`.... " />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gs.scholar_list" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gs.labeled" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.labeled">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gs.label_list" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.label_list">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,13 +182,19 @@
       <find>th</find>
       <find>records[i]</find>
       <find>print</find>
-      <find>label</find>
       <find>connection</find>
       <find>query</find>
       <find>db</find>
       <find>self</find>
       <find>引用</find>
       <find>gs</find>
+      <find>userlist</find>
+      <find>sybil</find>
+      <find>raise</find>
+      <find>&gt;</find>
+      <find>label</find>
+      <find>label +</find>
+      <find>mycursor</find>
     </findStrings>
     <replaceStrings>
       <replace>td</replace>
@@ -138,7 +203,11 @@
       <replace>self.query</replace>
       <replace>mydb</replace>
       <replace>label_system</replace>
+      <replace>user_list</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -148,17 +217,20 @@
         <option value="$PROJECT_DIR$/static/login.js" />
         <option value="$PROJECT_DIR$/templates/label.css" />
         <option value="$PROJECT_DIR$/templates/modules/record_entry.html" />
-        <option value="$PROJECT_DIR$/templates/record.html" />
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/static/register.js" />
         <option value="$PROJECT_DIR$/static/label.js" />
-        <option value="$PROJECT_DIR$/templates/label.html" />
         <option value="$PROJECT_DIR$/static/label.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/help.py" />
-        <option value="$PROJECT_DIR$/db.py" />
+        <option value="$PROJECT_DIR$/templates/label.html" />
+        <option value="$PROJECT_DIR$/templates/record.html" />
+        <option value="$PROJECT_DIR$/templates/modify_label.html" />
         <option value="$PROJECT_DIR$/server.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d68fad8d-9346-42a2-87e7-927107fe81ac/console.sql" />
+        <option value="$PROJECT_DIR$/db.py" />
       </list>
     </option>
   </component>
@@ -169,13 +241,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="574" />
+    <option name="x" value="196" />
     <option name="y" value="23" />
-    <option name="width" value="706" />
+    <option name="width" value="1066" />
     <option name="height" value="714" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -188,7 +260,52 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tornadotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tornadotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tornadotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tornadotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tornadotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tornadotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -197,6 +314,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore&#10;true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -438,27 +556,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="574" y="23" width="706" height="714" extended-state="0" />
+    <frame x="196" y="23" width="1066" height="714" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17038777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22167969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2530242" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.50390625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19042969" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.49609375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -489,187 +607,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="127" lean-forward="false" selection-start-line="68" selection-start-column="127" selection-end-line="68" selection-end-column="127" />
-          <folding>
-            <element signature="e#3939#4237#0" expanded="false" />
-            <element signature="e#4296#7187#0" expanded="false" />
-            <marker date="1488173442000" expanded="true" signature="551:670" ph="SELECT count... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="898:985" ph="INSERT INTO `label_system`.`userlist`... " />
-            <marker date="1488173442000" expanded="true" signature="1078:1133" ph="SELECT name userlist" />
-            <marker date="1488173442000" expanded="true" signature="1308:1360" ph="SELECT * FRO... userlist" />
-            <marker date="1488173442000" expanded="true" signature="1593:1652" ph="SELECT passw... userlist" />
-            <marker date="1488173442000" expanded="true" signature="3240:3326" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="3546:3637" ph="UPDATE `labe... " />
-            <marker date="1488173442000" expanded="true" signature="3759:3842" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="3973:4079" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="4352:4400" ph="SELECT `mycu... userlist" />
-            <marker date="1488173442000" expanded="true" signature="4593:4661" ph="SELECT * fro... label_list" />
-            <marker date="1488173442000" expanded="true" signature="4775:4825" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5156:5206" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5538:5588" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5775:5825" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6184:6234" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6594:6644" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6823:6873" ph="UPDATE userl... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/label.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#2872#3039#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-          <folding>
-            <element signature="e#3939#4237#0" expanded="false" />
-            <element signature="e#4296#7187#0" expanded="false" />
-            <marker date="1488173442000" expanded="true" signature="551:670" ph="SELECT count... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="898:985" ph="INSERT INTO `label_system`.`userlist`... " />
-            <marker date="1488173442000" expanded="true" signature="1078:1133" ph="SELECT name userlist" />
-            <marker date="1488173442000" expanded="true" signature="1308:1360" ph="SELECT * FRO... userlist" />
-            <marker date="1488173442000" expanded="true" signature="1593:1652" ph="SELECT passw... userlist" />
-            <marker date="1488173442000" expanded="true" signature="3240:3326" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="3546:3637" ph="UPDATE `labe... " />
-            <marker date="1488173442000" expanded="true" signature="3759:3842" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="3973:4079" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="4352:4400" ph="SELECT `mycu... userlist" />
-            <marker date="1488173442000" expanded="true" signature="4593:4661" ph="SELECT * fro... label_list" />
-            <marker date="1488173442000" expanded="true" signature="4775:4825" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5156:5206" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5538:5588" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5775:5825" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6184:6234" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6594:6644" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6823:6873" ph="UPDATE userl... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/label.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/label.css" />
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#2872#3039#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="93" lean-forward="false" selection-start-line="21" selection-start-column="93" selection-end-line="21" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#2872#3039#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tornado/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tornado/template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/poemmaker.py" />
     <entry file="file://$PROJECT_DIR$/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/templates/poem.html" />
@@ -716,13 +658,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/label.css" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d68fad8d-9346-42a2-87e7-927107fe81ac/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9e202ad3-dd18-43fd-96c1-0bd0e983ef22/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -732,13 +667,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/pics/avatar/1.jpg" />
     <entry file="file://$PROJECT_DIR$/static/pics/404.png" />
-    <entry file="file://$PROJECT_DIR$/templates/modules/record_entry.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3332">
@@ -750,13 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -848,13 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/label.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -862,68 +776,316 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/help.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1488162366000" expanded="true" signature="99:137" ph="SELECT filen... scholar_list" />
-            <marker date="1488162366000" expanded="true" signature="99:191" ph="SELECT filen... scholar_list" />
-            <marker date="1488162366000" expanded="true" signature="302:377" ph="INSERT INTO `label_system`.label_list... " />
-            <marker date="1488162366000" expanded="true" signature="492:564" ph="INSERT INTO `label_system`.label_list... " />
-            <marker date="1488162366000" expanded="true" signature="639:762" ph="SELECT filen... scholar_list" />
-            <marker date="1488162366000" expanded="true" signature="873:948" ph="INSERT INTO `label_system`.label_list... " />
-            <marker date="1488162366000" expanded="true" signature="1066:1138" ph="INSERT INTO `label_system`.label_list... " />
-            <marker date="1488162366000" expanded="true" signature="1091:1138" ph="INSERT INTO `gs`.label_list... " />
-            <marker date="1488162366000" expanded="true" signature="1223:1245" ph="SELECT filen... scholar_list" />
-            <marker date="1488162366000" expanded="true" signature="1223:1367" ph="SELECT filen... scholar_list" />
-            <marker date="1488162366000" expanded="true" signature="1435:1495" ph="INSERT INTO `label_system`.label_list... " />
-            <marker date="1488162366000" expanded="true" signature="1460:1495" ph="INSERT INTO `gs`.label_list... " />
-            <marker date="1488162366000" expanded="true" signature="1571:1586" ph="SELECT * fro... label_list" />
-            <marker date="1488162366000" expanded="true" signature="1571:1610" ph="SELECT * fro... label_list" />
-            <marker date="1488162366000" expanded="true" signature="1702:1775" ph="UPDATE `labe... " />
-            <marker date="1488162366000" expanded="true" signature="1722:1775" ph="UPDATE `gs`.... " />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/modules/record_entry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/help.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/modify_label.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="22" column="120" lean-forward="false" selection-start-line="22" selection-start-column="120" selection-end-line="22" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/label.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#2872#3039#0" expanded="false" />
-          </folding>
+          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="167" column="7" lean-forward="true" selection-start-line="167" selection-start-column="7" selection-end-line="167" selection-end-column="7" />
+        <state relative-caret-position="109">
+          <caret line="165" column="7" lean-forward="false" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
           <folding>
-            <element signature="e#3939#4237#0" expanded="false" />
-            <element signature="e#4296#7187#0" expanded="false" />
-            <marker date="1488173442000" expanded="true" signature="551:670" ph="SELECT count... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="898:985" ph="INSERT INTO `label_system`.`userlist`... " />
-            <marker date="1488173442000" expanded="true" signature="1078:1133" ph="SELECT name userlist" />
-            <marker date="1488173442000" expanded="true" signature="1308:1360" ph="SELECT * FRO... userlist" />
-            <marker date="1488173442000" expanded="true" signature="1593:1652" ph="SELECT passw... userlist" />
-            <marker date="1488173442000" expanded="true" signature="3240:3326" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="3546:3637" ph="UPDATE `labe... " />
-            <marker date="1488173442000" expanded="true" signature="3759:3842" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="3973:4079" ph="SELECT filen... scholar_list" />
-            <marker date="1488173442000" expanded="true" signature="4352:4400" ph="SELECT `mycu... userlist" />
-            <marker date="1488173442000" expanded="true" signature="4593:4661" ph="SELECT * fro... label_list" />
-            <marker date="1488173442000" expanded="true" signature="4775:4825" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5156:5206" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5538:5588" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="5775:5825" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6184:6234" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6594:6644" ph="UPDATE userl... " />
-            <marker date="1488173442000" expanded="true" signature="6823:6873" ph="UPDATE userl... " />
+            <element signature="e#7694#9911#0" expanded="false" />
+            <element signature="e#9974#11479#0" expanded="false" />
+            <marker date="1488201802000" expanded="true" signature="557:676" ph="SELECT count... scholar_list" />
+            <marker date="1488201802000" expanded="true" signature="916:973" ph="SELECT count... labeled" />
+            <marker date="1488201802000" expanded="true" signature="1201:1233" ph="INSERT INTO `label_system`.`userlist`... " />
+            <marker date="1488201802000" expanded="true" signature="1201:1289" ph="INSERT INTO `label_system`.`user_list`... " />
+            <marker date="1488201802000" expanded="true" signature="1382:1438" ph="SELECT name user_list" />
+            <marker date="1488201802000" expanded="true" signature="1613:1666" ph="SELECT * FRO... user_list" />
+            <marker date="1488201802000" expanded="true" signature="1899:1959" ph="SELECT passw... user_list" />
+            <marker date="1488201802000" expanded="true" signature="4027:4113" ph="SELECT filen... scholar_list" />
+            <marker date="1488201802000" expanded="true" signature="4333:4424" ph="UPDATE `labe... " />
+            <marker date="1488201802000" expanded="true" signature="4770:4835" ph="SELECT filen... labeled" />
+            <marker date="1488201802000" expanded="true" signature="5343:5392" ph="SELECT `mycu... user_list" />
+            <marker date="1488201802000" expanded="true" signature="5585:5654" ph="SELECT * fro... label_list" />
+            <marker date="1488201802000" expanded="true" signature="7514:7580" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="7714:7758" ph="SELECT * FRO... label_list" />
+            <marker date="1488201802000" expanded="true" signature="8186:8237" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="8409:8460" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="8831:8886" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="8946:9001" ph="SELECT schol... scholar_list" />
+            <marker date="1488201802000" expanded="true" signature="9206:9289" ph="INSERT INTO labeled... " />
+            <marker date="1488201802000" expanded="true" signature="9425:9469" ph="SELECT * fro... label_list" />
+            <marker date="1488201802000" expanded="true" signature="9746:9797" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="10042:10097" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="10157:10212" ph="SELECT schol... scholar_list" />
+            <marker date="1488201802000" expanded="true" signature="10417:10500" ph="INSERT INTO labeled... " />
+            <marker date="1488201802000" expanded="true" signature="10636:10680" ph="SELECT * fro... label_list" />
+            <marker date="1488201802000" expanded="true" signature="10957:11004" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="10957:11005" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="10957:11007" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="10957:11008" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="10957:11041" ph="UPDATE label... " />
+            <marker date="1488201802000" expanded="true" signature="11178:11227" ph="SELECT `mycu... user_list" />
+            <marker date="1488201802000" expanded="true" signature="11401:11452" ph="UPDATE user_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d68fad8d-9346-42a2-87e7-927107fe81ac/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.scholar_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.labeled">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cb43ef79/d68fad8d-9346-42a2-87e7-927107fe81ac/gs.label_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

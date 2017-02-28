@@ -1,0 +1,14 @@
+{% extends "label.html" %}
+
+{% block form %}
+    <form id="kernel" method="post" action="/modify" onsubmit="return validateForm()">
+        <input type="radio" name="label" value="reliable" />reliable
+        <input type="radio" name="label" value="sybil" />unreliable
+        <input type="radio" name="label" value="ambiguous" />ambiguous
+        <input type="radio" name="label" value="invalid" />invalid
+        <input type="hidden" name="filename" value="{{scholarID}}.parse" />
+        <input type="hidden" name="account" value="{{email}}" />
+        <input type="hidden" name="original" value="{{original}}" />
+        <input type="submit" value="submit" id="submit_btn" />
+    </form>
+{% end %}
