@@ -4,7 +4,6 @@
     <list default="true" id="07ca49f0-1c41-47ca-97f6-c06b26c358e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.py" afterPath="$PROJECT_DIR$/db.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,46 +51,46 @@
       <file leaf-file-name="db.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="272" column="92" lean-forward="false" selection-start-line="272" selection-start-column="92" selection-end-line="272" selection-end-column="92" />
+            <state relative-caret-position="296">
+              <caret line="184" column="37" lean-forward="true" selection-start-line="184" selection-start-column="37" selection-end-line="184" selection-end-column="37" />
               <folding>
-                <element signature="e#8237#8350#0" expanded="false" />
-                <element signature="e#8434#10651#0" expanded="false" />
-                <marker date="1488266030000" expanded="true" signature="557:676" ph="SELECT count... scholar_list" />
-                <marker date="1488266030000" expanded="true" signature="916:973" ph="SELECT count... labeled" />
-                <marker date="1488266030000" expanded="true" signature="916:998" ph="SELECT count... labeled" />
-                <marker date="1488266030000" expanded="true" signature="1226:1258" ph="INSERT INTO `label_system`.`userlist`... " />
-                <marker date="1488266030000" expanded="true" signature="1226:1314" ph="INSERT INTO `label_system`.`user_list`... " />
-                <marker date="1488266030000" expanded="true" signature="1407:1463" ph="SELECT name user_list" />
-                <marker date="1488266030000" expanded="true" signature="1638:1691" ph="SELECT * FRO... user_list" />
-                <marker date="1488266030000" expanded="true" signature="1924:1984" ph="SELECT passw... user_list" />
-                <marker date="1488266030000" expanded="true" signature="4163:4249" ph="SELECT filen... scholar_list" />
-                <marker date="1488266030000" expanded="true" signature="4469:4560" ph="UPDATE `labe... " />
-                <marker date="1488266030000" expanded="true" signature="4906:4971" ph="SELECT filen... labeled" />
-                <marker date="1488266030000" expanded="true" signature="5479:5528" ph="SELECT `mycu... user_list" />
-                <marker date="1488266030000" expanded="true" signature="5721:5790" ph="SELECT * fro... label_list" />
-                <marker date="1488266030000" expanded="true" signature="5875:5929" ph="SELECT * FRO... labeled" />
-                <marker date="1488266030000" expanded="true" signature="8254:8320" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="8454:8498" ph="SELECT * FRO... label_list" />
-                <marker date="1488266030000" expanded="true" signature="8926:8977" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="9149:9200" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="9571:9626" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="9686:9741" ph="SELECT schol... scholar_list" />
-                <marker date="1488266030000" expanded="true" signature="9946:10029" ph="INSERT INTO labeled... " />
-                <marker date="1488266030000" expanded="true" signature="10165:10209" ph="SELECT * fro... label_list" />
-                <marker date="1488266030000" expanded="true" signature="10486:10537" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="10782:10837" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="10897:10952" ph="SELECT schol... scholar_list" />
-                <marker date="1488266030000" expanded="true" signature="11157:11240" ph="INSERT INTO labeled... " />
-                <marker date="1488266030000" expanded="true" signature="11376:11420" ph="SELECT * fro... label_list" />
-                <marker date="1488266030000" expanded="true" signature="11911:11958" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="11911:11959" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="11911:11961" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="11911:11962" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="11911:11995" ph="UPDATE label... " />
-                <marker date="1488266030000" expanded="true" signature="12235:12286" ph="UPDATE user_... " />
-                <marker date="1488266030000" expanded="true" signature="12387:12436" ph="SELECT `mycu... user_list" />
-                <marker date="1488266030000" expanded="true" signature="12630:12681" ph="UPDATE user_... " />
+                <element signature="e#8132#8245#0" expanded="false" />
+                <element signature="e#8329#10546#0" expanded="false" />
+                <marker date="1488267545000" expanded="true" signature="557:676" ph="SELECT count... scholar_list" />
+                <marker date="1488267545000" expanded="true" signature="916:973" ph="SELECT count... labeled" />
+                <marker date="1488267545000" expanded="true" signature="916:998" ph="SELECT count... labeled" />
+                <marker date="1488267545000" expanded="true" signature="1226:1258" ph="INSERT INTO `label_system`.`userlist`... " />
+                <marker date="1488267545000" expanded="true" signature="1226:1314" ph="INSERT INTO `label_system`.`user_list`... " />
+                <marker date="1488267545000" expanded="true" signature="1407:1463" ph="SELECT name user_list" />
+                <marker date="1488267545000" expanded="true" signature="1638:1691" ph="SELECT * FRO... user_list" />
+                <marker date="1488267545000" expanded="true" signature="1924:1984" ph="SELECT passw... user_list" />
+                <marker date="1488267545000" expanded="true" signature="4163:4249" ph="SELECT filen... scholar_list" />
+                <marker date="1488267545000" expanded="true" signature="4469:4560" ph="UPDATE `labe... " />
+                <marker date="1488267545000" expanded="true" signature="4906:4971" ph="SELECT filen... labeled" />
+                <marker date="1488267545000" expanded="true" signature="5479:5528" ph="SELECT `mycu... user_list" />
+                <marker date="1488267545000" expanded="true" signature="5721:5790" ph="SELECT * fro... label_list" />
+                <marker date="1488267545000" expanded="true" signature="5875:5929" ph="SELECT * FRO... labeled" />
+                <marker date="1488267545000" expanded="true" signature="8149:8215" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="8349:8393" ph="SELECT * FRO... label_list" />
+                <marker date="1488267545000" expanded="true" signature="8821:8872" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="9044:9095" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="9466:9521" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="9581:9636" ph="SELECT schol... scholar_list" />
+                <marker date="1488267545000" expanded="true" signature="9841:9924" ph="INSERT INTO labeled... " />
+                <marker date="1488267545000" expanded="true" signature="10060:10104" ph="SELECT * fro... label_list" />
+                <marker date="1488267545000" expanded="true" signature="10381:10432" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="10677:10732" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="10792:10847" ph="SELECT schol... scholar_list" />
+                <marker date="1488267545000" expanded="true" signature="11052:11135" ph="INSERT INTO labeled... " />
+                <marker date="1488267545000" expanded="true" signature="11271:11315" ph="SELECT * fro... label_list" />
+                <marker date="1488267545000" expanded="true" signature="11806:11853" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="11806:11854" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="11806:11856" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="11806:11857" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="11806:11890" ph="UPDATE label... " />
+                <marker date="1488267545000" expanded="true" signature="12130:12181" ph="UPDATE user_... " />
+                <marker date="1488267545000" expanded="true" signature="12282:12331" ph="SELECT `mycu... user_list" />
+                <marker date="1488267545000" expanded="true" signature="12525:12576" ph="UPDATE user_... " />
               </folding>
             </state>
           </provider>
@@ -174,7 +173,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="186" />
+    <option name="x" value="226" />
     <option name="y" value="23" />
     <option name="width" value="1049" />
     <option name="height" value="714" />
@@ -493,11 +492,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488244047784</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="push to vps">
+      <created>1488266044463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1488266044463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="186" y="23" width="1049" height="714" extended-state="0" />
+    <frame x="226" y="23" width="1049" height="714" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12512413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -566,7 +572,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implement modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement modification" />
+    <MESSAGE value="push to vps" />
+    <option name="LAST_COMMIT_MESSAGE" value="push to vps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1006,46 +1013,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="272" column="92" lean-forward="false" selection-start-line="272" selection-start-column="92" selection-end-line="272" selection-end-column="92" />
+        <state relative-caret-position="296">
+          <caret line="184" column="37" lean-forward="true" selection-start-line="184" selection-start-column="37" selection-end-line="184" selection-end-column="37" />
           <folding>
-            <element signature="e#8237#8350#0" expanded="false" />
-            <element signature="e#8434#10651#0" expanded="false" />
-            <marker date="1488266030000" expanded="true" signature="557:676" ph="SELECT count... scholar_list" />
-            <marker date="1488266030000" expanded="true" signature="916:973" ph="SELECT count... labeled" />
-            <marker date="1488266030000" expanded="true" signature="916:998" ph="SELECT count... labeled" />
-            <marker date="1488266030000" expanded="true" signature="1226:1258" ph="INSERT INTO `label_system`.`userlist`... " />
-            <marker date="1488266030000" expanded="true" signature="1226:1314" ph="INSERT INTO `label_system`.`user_list`... " />
-            <marker date="1488266030000" expanded="true" signature="1407:1463" ph="SELECT name user_list" />
-            <marker date="1488266030000" expanded="true" signature="1638:1691" ph="SELECT * FRO... user_list" />
-            <marker date="1488266030000" expanded="true" signature="1924:1984" ph="SELECT passw... user_list" />
-            <marker date="1488266030000" expanded="true" signature="4163:4249" ph="SELECT filen... scholar_list" />
-            <marker date="1488266030000" expanded="true" signature="4469:4560" ph="UPDATE `labe... " />
-            <marker date="1488266030000" expanded="true" signature="4906:4971" ph="SELECT filen... labeled" />
-            <marker date="1488266030000" expanded="true" signature="5479:5528" ph="SELECT `mycu... user_list" />
-            <marker date="1488266030000" expanded="true" signature="5721:5790" ph="SELECT * fro... label_list" />
-            <marker date="1488266030000" expanded="true" signature="5875:5929" ph="SELECT * FRO... labeled" />
-            <marker date="1488266030000" expanded="true" signature="8254:8320" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="8454:8498" ph="SELECT * FRO... label_list" />
-            <marker date="1488266030000" expanded="true" signature="8926:8977" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="9149:9200" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="9571:9626" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="9686:9741" ph="SELECT schol... scholar_list" />
-            <marker date="1488266030000" expanded="true" signature="9946:10029" ph="INSERT INTO labeled... " />
-            <marker date="1488266030000" expanded="true" signature="10165:10209" ph="SELECT * fro... label_list" />
-            <marker date="1488266030000" expanded="true" signature="10486:10537" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="10782:10837" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="10897:10952" ph="SELECT schol... scholar_list" />
-            <marker date="1488266030000" expanded="true" signature="11157:11240" ph="INSERT INTO labeled... " />
-            <marker date="1488266030000" expanded="true" signature="11376:11420" ph="SELECT * fro... label_list" />
-            <marker date="1488266030000" expanded="true" signature="11911:11958" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="11911:11959" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="11911:11961" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="11911:11962" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="11911:11995" ph="UPDATE label... " />
-            <marker date="1488266030000" expanded="true" signature="12235:12286" ph="UPDATE user_... " />
-            <marker date="1488266030000" expanded="true" signature="12387:12436" ph="SELECT `mycu... user_list" />
-            <marker date="1488266030000" expanded="true" signature="12630:12681" ph="UPDATE user_... " />
+            <element signature="e#8132#8245#0" expanded="false" />
+            <element signature="e#8329#10546#0" expanded="false" />
+            <marker date="1488267545000" expanded="true" signature="557:676" ph="SELECT count... scholar_list" />
+            <marker date="1488267545000" expanded="true" signature="916:973" ph="SELECT count... labeled" />
+            <marker date="1488267545000" expanded="true" signature="916:998" ph="SELECT count... labeled" />
+            <marker date="1488267545000" expanded="true" signature="1226:1258" ph="INSERT INTO `label_system`.`userlist`... " />
+            <marker date="1488267545000" expanded="true" signature="1226:1314" ph="INSERT INTO `label_system`.`user_list`... " />
+            <marker date="1488267545000" expanded="true" signature="1407:1463" ph="SELECT name user_list" />
+            <marker date="1488267545000" expanded="true" signature="1638:1691" ph="SELECT * FRO... user_list" />
+            <marker date="1488267545000" expanded="true" signature="1924:1984" ph="SELECT passw... user_list" />
+            <marker date="1488267545000" expanded="true" signature="4163:4249" ph="SELECT filen... scholar_list" />
+            <marker date="1488267545000" expanded="true" signature="4469:4560" ph="UPDATE `labe... " />
+            <marker date="1488267545000" expanded="true" signature="4906:4971" ph="SELECT filen... labeled" />
+            <marker date="1488267545000" expanded="true" signature="5479:5528" ph="SELECT `mycu... user_list" />
+            <marker date="1488267545000" expanded="true" signature="5721:5790" ph="SELECT * fro... label_list" />
+            <marker date="1488267545000" expanded="true" signature="5875:5929" ph="SELECT * FRO... labeled" />
+            <marker date="1488267545000" expanded="true" signature="8149:8215" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="8349:8393" ph="SELECT * FRO... label_list" />
+            <marker date="1488267545000" expanded="true" signature="8821:8872" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="9044:9095" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="9466:9521" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="9581:9636" ph="SELECT schol... scholar_list" />
+            <marker date="1488267545000" expanded="true" signature="9841:9924" ph="INSERT INTO labeled... " />
+            <marker date="1488267545000" expanded="true" signature="10060:10104" ph="SELECT * fro... label_list" />
+            <marker date="1488267545000" expanded="true" signature="10381:10432" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="10677:10732" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="10792:10847" ph="SELECT schol... scholar_list" />
+            <marker date="1488267545000" expanded="true" signature="11052:11135" ph="INSERT INTO labeled... " />
+            <marker date="1488267545000" expanded="true" signature="11271:11315" ph="SELECT * fro... label_list" />
+            <marker date="1488267545000" expanded="true" signature="11806:11853" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="11806:11854" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="11806:11856" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="11806:11857" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="11806:11890" ph="UPDATE label... " />
+            <marker date="1488267545000" expanded="true" signature="12130:12181" ph="UPDATE user_... " />
+            <marker date="1488267545000" expanded="true" signature="12282:12331" ph="SELECT `mycu... user_list" />
+            <marker date="1488267545000" expanded="true" signature="12525:12576" ph="UPDATE user_... " />
           </folding>
         </state>
       </provider>

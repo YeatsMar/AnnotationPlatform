@@ -148,49 +148,46 @@ class DB:
         record = self.query("SELECT * FROM labeled WHERE filename=%s AND labeler=%s", (filename, account))
         if record is not None:
             return self.next_file(account, mycursor + 1)
-        if entry['reliable1'] is None and entry['sybil1'] is None:
-            self.update_my_cursor(account, mycursor)
+        # Case 1 : not A not B
+        if entry['reliable1'] is None and entry['sybil1'] is None: # no one has labeled
+            self.update_my_cursor(account, mycursor) #todo: may be wrong to update each time return
             return entry['filename']
-        elif entry['reliable1'] is not None and entry['sybil1'] is None:
+        # Case 2 : A not B
+        elif entry['reliable1'] is not None and entry['sybil1'] is None:# no one label sybil
             if entry['reliable2'] is not None:
                 # skip this entry
                 return self.next_file(account, mycursor + 1)
             else:
+                # need another one to check
                 self.update_my_cursor(account, mycursor)
                 return entry['filename']
-        elif entry['reliable1'] is None and entry['sybil1'] is not None:
+        # Case 3 : B not A
+        elif entry['reliable1'] is None and entry['sybil1'] is not None:# no one label reliable
             if entry['sybil2'] is not None:
                 # skip this entry
                 return self.next_file(account, mycursor + 1)
             else:
+                # need another one to check
                 self.update_my_cursor(account, mycursor)
                 return entry['filename']
+        # Case 4: A B
         else:
             if entry['reliable2'] is None and entry['sybil2'] is None:
+                # need the third one to decide
                 self.update_my_cursor(account, mycursor)
                 return entry['filename']
-            elif entry['reliable2'] is not None and entry['sybil2'] is None:
-                if entry['reliable3'] is not None:
-                    # skip this entry
-                    return self.next_file(account, mycursor + 1)
-                else:
+            elif entry['reliable2'] is not None and entry['sybil2'] is not None:
+                if entry['reliable3'] is None and entry['sybil3'] is None:
+                    # need the fifth one to decide -- result of simultaneous labeling
                     self.update_my_cursor(account, mycursor)
                     return entry['filename']
-            elif entry['reliable2'] is None and entry['sybil2'] is not None:
-                if entry['sybil3'] is not None:
+                else:
                     # skip this entry
                     return self.next_file(account, mycursor + 1)
-                else:
-                    self.update_my_cursor(account, mycursor)
-                    return entry['filename']
-            elif entry['reliable3'] is None and entry['sybil3'] is None:
-                self.update_my_cursor(account, mycursor)
-                return entry['filename']
-            elif entry['reliable3'] is not None and entry['sybil3'] is not None:
+                    # todo: here maybe full, directly check in mysql
+            else: # odd labels is OK
                 # skip this entry
                 return self.next_file(account, mycursor + 1)
-            else:
-                raise Exception('Over 4 labelers!')
 
     def modify_labeled(self, account, filename, label):
         self.sql_commit("UPDATE labeled SET label = %s WHERE filename = %s AND labeler = %s", (label, filename, account))
