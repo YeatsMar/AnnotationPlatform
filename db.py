@@ -199,17 +199,17 @@ class DB:
             moveforward = False
             i = 1
             while i < 4:
-                labelstr = original_label + str(i)
-                if entry[labelstr] == account or moveforward:
+                old_labelstr = original_label + str(i)
+                if entry[old_labelstr] == account or moveforward:
                     moveforward = True
                     if i != 3 and entry[original_label+str(i+1)] is not None:
                         # move forward and cover
-                        sql = "UPDATE label_list SET %s = '%s' WHERE filename='%s'" % (labelstr, entry[label+str(i+1)], filename)
+                        sql = "UPDATE label_list SET %s = '%s' WHERE filename='%s'" % (old_labelstr, entry[original_label+str(i+1)], filename)
                         self.sql_commit(sql, None)
                     else:
                         # empty
                         sql = "UPDATE label_list SET %s = NULL WHERE filename='%s'" % (
-                        labelstr, filename)
+                        old_labelstr, filename)
                         self.sql_commit(sql, None)
                         break
                 i = i + 1
