@@ -60,6 +60,7 @@ class ModifyHandler(tornado.web.RequestHandler):
         account = self.get_argument('account')
         original_label = self.get_argument('original')
         mydb.modify_labeled(account, filename, label)
+        mydb.modify_label_list(filename, original_label, label, account)
         # the same as /store
         name = mydb.get_name(account)
         filename = mydb.next_file(account)
