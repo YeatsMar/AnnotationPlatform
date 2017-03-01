@@ -39,8 +39,8 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="120" column="43" lean-forward="true" selection-start-line="120" selection-start-column="43" selection-end-line="120" selection-end-column="43" />
+            <state relative-caret-position="192">
+              <caret line="119" column="114" lean-forward="false" selection-start-line="119" selection-start-column="114" selection-end-line="119" selection-end-column="114" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -149,7 +149,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="23" />
-    <option name="width" value="1161" />
+    <option name="width" value="859" />
     <option name="height" value="712" />
   </component>
   <component name="ProjectView">
@@ -529,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488332289025</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ameliorate file handler">
+      <created>1488333496756</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1488333496756</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -542,7 +549,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="23" width="1161" height="712" extended-state="0" />
+    <frame x="10" y="23" width="859" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828283" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -552,7 +559,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13047364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17870256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19306931" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -619,7 +626,8 @@
     <MESSAGE value="fix BUGs in modify() in db.py" />
     <MESSAGE value="fix BUGs in modify_label_list() in db.py" />
     <MESSAGE value="fix BUGs in modify_label_list() in db.py again" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix BUGs in modify_label_list() in db.py again" />
+    <MESSAGE value="ameliorate file handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="ameliorate file handler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,8 +1106,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="120" column="43" lean-forward="true" selection-start-line="120" selection-start-column="43" selection-end-line="120" selection-end-column="43" />
+        <state relative-caret-position="192">
+          <caret line="119" column="114" lean-forward="false" selection-start-line="119" selection-start-column="114" selection-end-line="119" selection-end-column="114" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

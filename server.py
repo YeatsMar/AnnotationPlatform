@@ -103,8 +103,7 @@ class FileHandler(tornado.web.RequestHandler):
     def get(self):
         filename = self.get_argument('scholarID') + '.parse'
         a_file = open('/root/tornadotest/static/gs_data/' + filename, 'r')
-        #todo: explain each line
-        content = a_file.readline()
+        content = a_file.readlines()
         self.write('scholarID: ' + content[0] + '<br>')
         self.write('scholar name: ' + content[1] + '<br>')
         self.write('title/ affiliation: ' + content[2] + '<br>')
@@ -117,6 +116,8 @@ class FileHandler(tornado.web.RequestHandler):
         self.write('values in the citation diagram: ' + content[9] + '<br>')
         self.write('corresponding year to the above: ' + content[10] + '<br>')
         self.write('citation of each article from the highest to the lowest excluding 0: ' + content[11] + '<br>')
+        self.write('Article List: <br>'
+                   'form: articleID(just ignore it), title, authors, publication, citation(if has), published year')
         for i in range(12, len(content)):
             self.write(content[i] + '<br>')
 
