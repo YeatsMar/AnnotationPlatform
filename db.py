@@ -194,7 +194,9 @@ class DB:
 
     def modify_label_list(self, filename, original_label, label, account):
         # delete original
-        if original_label != 'ambiguous' and original_label != 'invalid':
+        if original_label == 'invalid':
+            self.sql_commit("UPDATE label_list SET label = NULL WHERE filename = %s", filename)
+        elif original_label != 'ambiguous':
             entry = self.query("SELECT * FROM label_list WHERE filename = %s", filename)
             moveforward = False
             i = 1
