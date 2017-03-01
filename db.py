@@ -227,13 +227,12 @@ class DB:
                 for i in range(1, 4):
                     labelstr = label + str(i)
                     if entry[labelstr] == account:
-                        self.update_my_cursor(account)
-                        raise Exception('Already insert into a slot in label_list! in db.py store_label()')
+                        raise Exception('Already insert into a slot in label_list!\nException in db.py modify_label_list()')
                     if entry[labelstr] is None:
                         sql = "UPDATE label_list SET %s = '%s' WHERE filename='%s'" % (
                         labelstr, account, filename)
                         self.sql_commit(sql, None)
-                    break
+                        break
 
     def store_label(self, account, filename, label):
         # store
