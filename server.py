@@ -116,7 +116,7 @@ class FileHandler(tornado.web.RequestHandler):
         self.write('values in the citation diagram: ' + content[9] + '<br>')
         self.write('corresponding year to the above: ' + content[10] + '<br>')
         self.write('citation of each article from the highest to the lowest excluding 0: ' + content[11] + '<br>')
-        self.write('Article List: <br>'
+        self.write('<br>Article List: <br>'
                    'form: articleID(just ignore it), title, authors, publication, citation(if has), published year')
         for i in range(12, len(content)):
             self.write(content[i] + '<br>')

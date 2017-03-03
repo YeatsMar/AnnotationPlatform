@@ -49,5 +49,9 @@ def modify_label_list():
     # mydb.sql_commit("DROP TABLE userlist", None)
     insert_labeled()
 
+
 if __name__ == '__main__':
-    insert_label_list()
+    try:
+        mydb.sql_commit("alter table labeled add time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP", None)
+    except Exception as e:
+        print e.message

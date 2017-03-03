@@ -30,24 +30,36 @@
             <a href="/record?account={{email}}"><input type="button" id="show_record" value="show data"></a>
         </div>
         <div id="criteria">
-            <p>判断原则:</p>
-            <p>1.查看Google Scholar Cite中显示的学者资料是否同Profile下载文件差不多，由于Profile中学者资料为2015年版，若学者2015年及之前文章列表没有改动，且邮箱不变者为有效数据，否则直接标记为invalid</p>
-            <p>2.通过以下标准判断学者是否有引入他人论文，只要存在一篇即为unreliable，如果存在一些文章有较大疑点标记为ambiguous，将疑点截图记录下来询问我，最终ambiguous也必须判断为reliable/unreliable，ambiguous不计分</p>
-            <p class="highlight">*长时间登录该标记系统却没有任何操作可能会出BUG，尝试重新登录即可，如果还有BUG麻烦把网页上的BUG追踪第一时间发给我谢谢_(:зゝ∠)_</p>
-            <p class="highlight">不推荐使用IE浏览器，最好是Chrome</p>
+            <p class="highlight">If there is anything goes wrong after long time connection without operation, just login again. If it still goes wrong, please contact me ASAP and report the BUG track (shown on the page) to me.</p>
+            <p class="highlight">Please use Chrome web browser instead of IE, which may cause BUGs.</p>
+
+            <p>Criteria:</p>
+            <p>There are 3 classification: reliable, unreliable, invalid. The data are profiles of each scholar on Google Scholar website. You need to scrutiny each scholar’s personal website to classify him/her.</p>
+            <p>The data are already collected and preprocessed. Click the two links above.</p>
             <br>
-            <p>判断方法:</p>
-            <p>1.看一下每篇文章列表里有没有这个作者，一般这个列表只有名字缩写，最好能全部点击进入文章详细页面确认是否作者本人，因为可能是名字缩写一样的其他人；但是文章多的话太费劲，可以抽样，或者通过其他方法快速判断（练多了就知道套路了嗯）</p>
-            <p>2.查看文章的标题，是否符合学者标注的研究领域（若有），或者是否和其他文章同属一个领域</p>
-            <p>3.查看文章合作作者是否相似</p>
-            <p>Tips：</p>
-            <p>1.一般没有通过邮件验证的学者下面的文章可疑性比较高，需要多抽样几篇；同理，没有照片、没有标明自己研究领域的学者也比较可疑（比较少打理Google Scholar的个人主页，可能存在根据Google系统推荐引入相似名字的其他学者论文）；相反，提供了个人主页的相对可信度较高</p>
-            <p>2.有的文章点击进入文章页面也没有作者的全名，需要点击查看论文原稿，如果还是没有，且无法通过其他信息判断的话，标记为ambiguous之后再修改</p>
-            <p>3.遇到期刊杂志这种不是学者的页面，不用看了直接标unreliable</p>
-            <p>4.有的学者名字改过，比如女性嫁人后随夫姓，需要仔细核对一下</p>
-            <p>5.有的学者父母也是学者，其实要格外小心有没有互相引入对方的论文，因为西方人习惯把父母的名字作为中间名，因此名字简写可能十分相近（因为姓氏必然相同）</p>
-            <p>6.有的教授不在文章列表里，但是这些文章其实是他/她学生发表的，不算是unreliable，这种可以通过作者所属学校判断</p>
-            <p class="redundant">*复杂度极高，因此标错也可以接受</p>
+            <p>INVALID: since I collected all these data in 2016, there maybe some conspicuous modifications in some scholars’ profiles which cannot be ignored. You are supposed to compare my data with the latest data on Google Scholar website. If the data before year 2015 have been modified remarkably i.e. many theses published before 2016 have been deleted or their information(publication, title .etc.) has been modified, then the scholar’s data entry should be labeled INVALID.</p>
+            <br>
+            <p>UNRELIABLE: As long as there is one thesis not written by this scholar included in his/her profile, the scholar should be labeled UNRELIABLE, even if the thesis is actually written by his/her students. In short, only theses written by himself/herself should be included in his/her profile. If the data entry is actually not a scholar but a journal, label it as UNRELIABLE.</p>
+            <br>
+            <p>RELIABLE: All the theses are written by himself/herself.</p>
+            <br>
+            <p>AMBIGUOUS: This label is only set to flag for future decision, thus ambiguous entry is not counted. You can modify the flagged scholar later by clicking button MODIFY.</p>
+            <br>
+            <p>Here are some tips for identifying unreliable scholars:</p>
+            <p>1.You need to check the author list of each theses, make sure the scholar himself/herself is in the list. Click the theses links to see the full name of authors, in case the author is actually someone else with the same acronym or just include theses of his/her students or colleagues.</p>
+            <p>2.Scrutinize the scholars whose acronyms are quite common.</p>
+            <p>3.If the scholar publish too many theses, especially for those scholars in Mathematic, Physics or other mature fields, it is probable that he/she includes others theses.</p>
+            <p>4.Peruse the theses of top citations. It is more possible for scholars to include influential theses to increase his/her indexes.</p>
+            <p>5.For a thesis without the exact full name of the scholar, like maybe the surname is different while given name is the same, assess by other factors to decide whether the scholar is the author, for he/she may change his/her name:</p>
+            <div id="details">
+                <p>     1) Whether the title or abstract of the thesis matches with his/her research fields if given, if not whether this thesis is in the same research field of his/her other theses.</p>
+                <p>     2) Whether the co-authors of that thesis also collaborate with the scholar in other theses.</p>
+                <p>     3) Whether the intuition or affiliation is the same as the scholar.</p>
+                <p>     4) If the scholar is a female, it is possible the scholar is the author, for a female may change her surname because of marriage.</p>
+                <p>     5) There may be a case that the parent or relative of the scholar is also a scholar in the same field, then the scholar may include his/her theses. Peruse the background of the scholar.</p>
+            </div>
+            <p>6.If the profile is actually of a journal or a conference publication or something like that, in another word, it is not a scholar, label it UNRELIABLE.</p>
+            <p class="redundant"></p>
         </div>
     </div>
     <footer>
