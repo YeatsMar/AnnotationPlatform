@@ -1,4 +1,8 @@
 import pymysql
+import sys
+import MySQLdb
+
+sys.setrecursionlimit(5000)
 
 class DB:
     connection = None

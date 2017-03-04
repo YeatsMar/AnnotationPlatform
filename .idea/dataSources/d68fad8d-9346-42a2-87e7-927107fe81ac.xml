@@ -160,147 +160,142 @@
       <Position>4</Position>
       <DataType>longtext|0</DataType>
     </column>
-    <column id="49" parent="12" name="time">
-      <Position>5</Position>
-      <DataType>timestamp|0</DataType>
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
-    </column>
-    <key id="50" parent="12" name="PRIMARY">
+    <key id="49" parent="12" name="PRIMARY">
       <ColNames>labeler
 filename</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="51" parent="13" name="filename">
+    <column id="50" parent="13" name="filename">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="13" name="longname">
+    <column id="51" parent="13" name="longname">
       <Position>2</Position>
       <DataType>longtext|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="13" name="length">
+    <column id="52" parent="13" name="length">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="54" parent="13" name="initial">
+    <column id="53" parent="13" name="initial">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="55" parent="13" name="suffix">
+    <column id="54" parent="13" name="suffix">
       <Position>5</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <key id="56" parent="13" name="PRIMARY">
+    <key id="55" parent="13" name="PRIMARY">
       <ColNames>filename</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="57" parent="14" name="publicationName">
+    <column id="56" parent="14" name="publicationName">
       <Position>1</Position>
       <DataType>longtext|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="14" name="field">
+    <column id="57" parent="14" name="field">
       <Position>2</Position>
       <DataType>varchar(60)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="59" parent="14" name="major">
+    <column id="58" parent="14" name="major">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="60" parent="14" name="id">
+    <column id="59" parent="14" name="id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <key id="61" parent="14" name="PRIMARY">
+    <key id="60" parent="14" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="62" parent="15" name="name_abbr">
+    <column id="61" parent="15" name="name_abbr">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="63" parent="15" name="nb">
+    <column id="62" parent="15" name="nb">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="64" parent="15" name="PRIMARY">
+    <key id="63" parent="15" name="PRIMARY">
       <ColNames>name_abbr</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="65" parent="16" name="surname">
+    <column id="64" parent="16" name="surname">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="66" parent="16" name="nb">
+    <column id="65" parent="16" name="nb">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="67" parent="16" name="PRIMARY">
+    <key id="66" parent="16" name="PRIMARY">
       <ColNames>surname</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="68" parent="17" name="filename">
+    <column id="67" parent="17" name="filename">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="69" parent="17" name="scholarname">
+    <column id="68" parent="17" name="scholarname">
       <Position>2</Position>
       <DataType>longtext|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="70" parent="17" name="label">
+    <column id="69" parent="17" name="label">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;unlabeled&apos;</DefaultExpression>
     </column>
-    <column id="71" parent="17" name="labeler">
+    <column id="70" parent="17" name="labeler">
       <Position>4</Position>
       <Comment>email</Comment>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="72" parent="17" name="category">
+    <column id="71" parent="17" name="category">
       <Position>5</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <key id="73" parent="17" name="PRIMARY">
+    <key id="72" parent="17" name="PRIMARY">
       <ColNames>filename</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="74" parent="18" name="email">
+    <column id="73" parent="18" name="email">
       <Position>1</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="75" parent="18" name="name">
+    <column id="74" parent="18" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="76" parent="18" name="password">
+    <column id="75" parent="18" name="password">
       <Position>3</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="77" parent="18" name="mycursor">
+    <column id="76" parent="18" name="mycursor">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="78" parent="18" name="PRIMARY">
+    <key id="77" parent="18" name="PRIMARY">
       <ColNames>email</ColNames>
       <Primary>1</Primary>
     </key>
