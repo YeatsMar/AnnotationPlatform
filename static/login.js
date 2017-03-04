@@ -6,7 +6,7 @@ function validate() {
 	var warn0 = document.getElementById("warn0");
 	// 在前台验证
 	if (account.value === "") {
-		warn0.innerHTML = "账号不得为空！";
+		warn0.innerHTML = "Account cannot be null!";
 	} 
 	else {
 		warn0.innerHTML = "√";
@@ -18,7 +18,7 @@ function validate() {
 	var warn1 = document.getElementById("warn1");
 	// 在前台验证
 	if (password.value === "") {
-		warn2.innerHTML = "密码不得为空！";
+		warn2.innerHTML = "Password cannot be null!";
 	} 
 	else {
 		warn2.innerHTML = "√";
@@ -70,11 +70,7 @@ function validateForm() {
     if(status===null){
         return true;
     } else {
-        alert("用户名或密码错误！");
+        alert("Wrong password or account!");
         return false;
     }
-}
-
-function visit() {
-    alert("将以未登陆访客的形式访问他人主页!");
 }

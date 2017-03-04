@@ -8,13 +8,13 @@ function validate() {
 	var accountPattern = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;// pattern for email
 	// 在前台验证
 	if (account.value === "") {
-		warn0.innerHTML = "账号不得为空！";
+		warn0.innerHTML = "Account cannot be null!";
         return false;
 	} else if (!accountPattern.test(account.value)) {
-		warn0.innerHTML = "邮箱格式不正确！";
+		warn0.innerHTML = "Invalid email!";
         return false;
 	} else if (account.value.length >= 45) {
-		warn0.innerHTML = "邮箱字符少于45位！";
+		warn0.innerHTML = "The length of email should be less than 45 chars!";
         return false;
 	}
 	else {
@@ -27,7 +27,7 @@ function validate() {
 	var warn1 = document.getElementById("warn1");
 	// 在前台验证
 	if (username.value === "") {
-		warn1.innerHTML = "账号不得为空！";
+		warn1.innerHTML = "Account cannot be null!";
 		return false;
 	} else {
 		warn1.innerHTML = "√";
@@ -42,7 +42,7 @@ function validate() {
 	var passwordPattern2 = /\D/;// match only one can return true
 	// 在前台验证
 	if (password.value === "") {
-		warn2.innerHTML = "密码不得为空！";
+		warn2.innerHTML = "Password cannot be null";
 		return false;
 	} else {
 		warn2.innerHTML = "√";
@@ -56,7 +56,7 @@ function validate() {
 	if (passwordRepeat.value === password.value) {
 		warn3.innerHTML = "√";
 	} else {
-		warn3.innerHTML = "密码不一致！";
+		warn3.innerHTML = "Different password!";
 		return false;
 	}
 	return true;
@@ -87,12 +87,12 @@ function validateForm() {
 		xhr.send(serialize(form));//wait for servlet
 		var status = xhr.getResponseHeader("RegisterStatus");
 		if (!(status === null)) {
-			alert("帐号重复！");
+			alert("The email has already been registered!");
 			return false;
 		}
 		return true;
 	} else {
-		alert("填写错误!");
+		alert("Fill in mistakes!");
 		return false;
 	}
 
