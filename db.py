@@ -128,7 +128,7 @@ class DB:
     #     return records
 
     def get_records(self, account):
-        return self.query_many("SELECT filename, scholarname, label FROM labeled WHERE labeler=%s",
+        return self.query_many("SELECT filename, scholarname, label FROM labeled WHERE labeler=%s ORDER BY `time` DESC",
                                   account)
 
     # def nextfile(self):
