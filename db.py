@@ -239,16 +239,13 @@ class DB:
                         labelstr, account, filename)
                         self.sql_commit(sql, None)
                         break
+        # if succeed in modifying
+        self.sql_commit("UPDATE labeled SET label=%s WHERE filename=%s AND labeler=%s", (label, filename, account))
 
     def store_label(self, account, filename, label):
         # store
         if label == 'invalid' or label == 'ambiguous':
             self.sql_commit("UPDATE label_list SET label=%s WHERE filename=%s", (label, filename))
-            result = self.query("SELECT scholarname FROM scholar_list WHERE filename =%s", filename)
-            if result is None:
-                raise Exception('Cannot find this scholar! in db.py store_label()')
-            scholarname = result['scholarname']
-            self.sql_commit("INSERT INTO labeled (labeler, filename, label, scholarname) VALUES (%s, %s, %s, %s)", (account, filename, label, scholarname))
         else:
             entry = self.query("SELECT * from label_list WHERE filename = %s", filename)
             if entry is None:
@@ -264,6 +261,14 @@ class DB:
                         sql = "UPDATE label_list SET %s = '%s' WHERE filename='%s'" % (labelstr, account, filename)
                         self.sql_commit(sql, None)
                         break
+        # if all the above go through smoothly, succeed in storing
+        result = self.query("SELECT scholarname FROM scholar_list WHERE filename =%s", filename)
+        if result is None:
+            raise Exception('Cannot find this scholar! in db.py store_label()')
+        scholarname = result['scholarname']
+        self.sql_commit(
+            "INSERT INTO labeled (labeler, filename, label, scholarname) VALUES (%s, %s, %s, %s)",
+            (account, filename, label, scholarname))
         # no matter what label, move forward the cursor
         self.update_my_cursor(account)
 
