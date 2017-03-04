@@ -18,19 +18,19 @@
 			</p>
 		</div>
 		<form id="login" method="POST" action="/label" onsubmit="return validateForm()">
-			<p>请输入您的账号及密码</p>
+			<p>Login with your account</p>
 			<div>
-				账号：<input type="text" size=20 value="" placeholder="请输入您的邮箱"
+				Account：<input type="text" size=20 value="" placeholder="your email"
 					name="account" id="account" onchange="validate()" autofocus /><span
 					class="warnning" id="warn0"></span><br />
 				<!--size-->
-				密码：<input type="password" size=20 value="" placeholder="请输入密码"
+				Password：<input type="password" size=20 value="" placeholder="password"
 					name="password" id="password" onchange="validate()" /><span class="warnning"
 					id="warn1"></span><br />
 				<!--password cannot be shown-->
 				<div id="btn">
-					<input id="btn1" type="submit" value="登入" /> 
-					<a href="/registerpage"><input id="btn2" type="button" value="注册" /></a>
+					<input id="btn1" type="submit" value="Login" />
+					<a href="/registerpage"><input id="btn2" type="button" value="Register" /></a>
 				</div>
 			</div>
 		</form>
