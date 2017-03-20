@@ -107,7 +107,7 @@ class DB:
                 self.sql_commit(sql, parameter)
             else:
                 print ('sql=%s\nexception is %s\n\n' % (sql, e))
-                raise # todo: delete
+                # raise # todo: delete
 
 
     def get_labeling(self, account):
@@ -154,7 +154,7 @@ class DB:
             return self.next_file(account, mycursor + 1)
         # Case 1 : not A not B
         if entry['reliable1'] is None and entry['sybil1'] is None: # no one has labeled
-            self.update_my_cursor(account, mycursor) #todo: may be wrong to update each time return
+            self.update_my_cursor(account, mycursor)
             return entry['filename']
         # Case 2 : A not B
         elif entry['reliable1'] is not None and entry['sybil1'] is None:# no one label sybil
@@ -188,7 +188,6 @@ class DB:
                 else:
                     # skip this entry
                     return self.next_file(account, mycursor + 1)
-                    # todo: here maybe full, directly check in mysql
             else: # odd labels is OK
                 # skip this entry
                 return self.next_file(account, mycursor + 1)
